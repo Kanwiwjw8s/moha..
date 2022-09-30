@@ -6,7 +6,7 @@ define('API_KEY',$MROAN);
 echo file_get_contents("https://api.telegram.org/bot$MROAN/setwebhook?url=".$_SERVER['SERVER_NAME']."".$_SERVER['SCRIPT_NAME']);
 function bot($method,$datas=[]){
 $php88 = http_build_query($datas);
-$url = "https://api.telegram.org/bot".API_KEY."/".$method."?$php88";
+$url = "https://api.telegram.org/bot".API_KEY."5660509069:AAG6Asg3iN8PHWMnUaM-yiUP2OmyWwNLmF0".$method."?$php88";
 $php88 = file_get_contents($url);
 return json_decode($php88);}
 
